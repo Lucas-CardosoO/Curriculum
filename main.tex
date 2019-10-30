@@ -1,0 +1,235 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.1 (30/4/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[]{deedy-resume-openfont}
+
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\namesection{Lucas}{Cardoso C. A. de Oliveira}{ \urlstyle{same}%\url{http://debarghyadas.com} \\
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth} 
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Personal Info
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Personal Information} 
+\subsection{Contact Number}
++55 81 99224-4664\\
++55 81 3038-6990\\
+
+\subsection{\\e-mail}
+\href{mailto:cardosolucas92@gmail.com}{\custombold{cardosolucas92@gmail.com}} \\
+\href{mailto:lccao@cin.ufpe.br}{\custombold{lccao@cin.ufpe.br}} \\
+
+\subsection{\\GitHub}
+\href{https://github.com/Lucas-CardosoO}{\custombold{Lucas-CardosoO}}\\ 
+
+\subsection{\\Language Proficiency}
+{\custombold{Portuguese: }} Native speaker\\
+{\custombold{English: }} Fluent\\
+{\custombold{Italian: }} Beginner
+\sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{\\Skills}
+\subsection{Programming}
+\location{{\custombold{Proficient:}}}
+Swift \textbullet{}   Python \textbullet{}
+C++ \textbullet{} Objective-C \\
+\location{{\custombold{Familiar with:}}}
+Java \textbullet{}   Matlab \textbullet{}   C\# \textbullet{} JavaScript\\
+\sectionsep
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{\\Education} 
+
+\subsection{Federal University of Pernambuco - UFPE}
+\descript{Graduating in Computer Science}
+\location{Expected Dec 2021 | Recife, Brazil}
+\location{Current GPA: 9.14/10}
+\sectionsep
+
+\subsection{\\University of Pernambuco - UPE}
+\descript{Dropout of Mechatronics Engineering}
+\location{Dropout 2010 - 2016 | Recife, Brazil}
+\sectionsep
+
+\subsection{\\Politecnico di Torino - POLITO}
+\descript{Dropout of Automotive Engineering}
+\location{Dropout 2014 - 2016 | Recife, Brazil}
+
+\sectionsep
+
+
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.64\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience}
+
+\runsubsection{Musashi do Brasil}
+\descript{| Engineer Trainee \& Engineer Intern}
+\location{Apr 2013 – Aug 2014 | Igarassu, Brazil}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Part of a team of 10 that performed small automation projects in the production lines of the metallurgical factory, studying the impacts and viability of said projects, designing the solution and executing it. Resulting in a improve in annual revenue in the order of millions of Reais (Brazilian Currency).
+\end{tightemize}
+\sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     RESEARCH
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Research \& Development}
+\runsubsection{Apple Developer Academy}
+\descript{| Student}
+\location{Feb 2018 – Present | Recife, Brazil}
+\begin{tightemize}
+\item Learned and implemented iOS and tvOS development technology
+\item Developed products from scratch, analising market demand and ideating using different techniques
+\item Developed an app for iOS to inform Recycled Garbage collections locations on the city of Recife, ordering them in relatio to your location and daily commute. Not continued.
+\item Developed game using SpriteKit for tvOS called The Adventures of Gumn. Currently on the App Store.
+\item Developed Tickat, an app for iOS to encourage exploration of your neighbourhood that you discover curiosities of locations when you get near them. Not yet released.
+\item Developed Splool, game for iOS, currently on the App Store
+\end{tightemize}
+\sectionsep
+
+\runsubsection{PET - Informática}
+\descript{| Member}
+\location{Aug 2017 – Aug 2018 | Recife, Brazil}
+\begin{tightemize}
+\item An organization of 16 people that seeks to improve students life in the graduation courses as well as contribute to the community with technology education
+\item Given courses in basics of informatic (Excell, word, windows) to adults
+\item Took part in the organization of Olimpíada de Informática (OPEI), a test for high school students to incentive the interest in computer science study
+\item Organized an intro to programming in python summer course for high school and university using Project-Based Learning
+\item Co-Author of article presented in the Frontiers in Education Conference (FIE) in 2018, it reports our experience with the intro to programming course previously mentioned
+\item Organized a Hackathon with 30+ participants that occurred during the winter break of 2018, with workshops happening during the event. The event had the objective to improve the graduation experience and learning of students in their freshmen and sophomore years
+\end{tightemize}
+\sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Projects
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Projects}
+
+\runsubsection{Bézier Curves and Convex Hull}
+\descript{| Programmer}
+\location{A web page that you can edit the points of a Bézier Curve and also Generates the convex hull of those points}
+\begin{tightemize}
+\item Developed in trio during the Graphic Processing course on the second semester of 2018. \\ \href{https://github.com/Lucas-CardosoO/BezierConvexHull}{https://github.com/Lucas-CardosoO/BezierConvexHull}
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Ray Tracer}
+\descript{| Programmer}
+\location{A Ray Tracer in C++ with perfect refraction and reflection}
+\begin{tightemize}
+\item Developed in trio during the Graphic Processing course on the second semester of 2018. \\ \href{https://github.com/Lucas-CardosoO/RayTracerPG/}{https://github.com/Lucas-CardosoO/RayTracerPG/}
+\end{tightemize}
+\sectionsep
+
+% \runsubsection{Tickat}
+% \descript{| Developer}
+% \location{iOS App. Not yet released.}
+% \begin{tightemize}
+% \item App to encourage exploration of your neighbourhood that you discover curiosities of locations when you get near them.
+% \end{tightemize}
+% \sectionsep
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\end{document}  \documentclass[]{article}https://github.com/
